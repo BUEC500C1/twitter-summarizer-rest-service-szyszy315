@@ -36,3 +36,7 @@ Twitter API is the only api used in this project. In the thread.py i have 3 thre
 It is possible to run different api calls at the same times but in this case just 1 needed. 
 ### Split the processing of an API into multiple threads?
 The processing of the api isn't splited into multiple threads. I just call the api in different threads simutaneously.
+## track the thread
+When the thread start working the name of the thread will be printed and you can learn from the image 3 threads start simutaneously.<br>
+When the work are all done it will print works all done.
+[!image](https://github.com/BUEC500C1/video-szyszy315/blob/master/ec500hw4.png)
