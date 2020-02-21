@@ -11,15 +11,17 @@ def main(tweets):
             if q.empty():
                 break
             work = q.get()
-            print('='*30)
+            print('='*97)
             print("working on {} thread".format(work))
+            print()
             get_all_tweets(work)
             image(work)
             video(work)
-            print('='*30)
+            print('='*60)
             print("{} thread done".format(work))
             q.task_done()
-        print('all works done')
+            print('now {} threads are running, totally {} threads'.format(threading.activeCount()-2,len(tweets)))
+            print('='*60)
     q = Queue()
     for i in tweets:
         q.put(i)
@@ -31,6 +33,7 @@ def main(tweets):
         threads.append(t)
         t.start()
     q.join() 
+    print('all works done')
 
 if __name__ == '__main__':
     tweets = ["@BU_Tweets","@BUAthletics","@BUexperts"]
