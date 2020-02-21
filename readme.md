@@ -39,4 +39,4 @@ The processing of the api isn't splited into multiple threads. I just call the a
 ## track the thread
 When the thread start working the name of the thread will be printed and you can learn from the image 3 threads start simutaneously.<br>
 When the work are all done it will print works all done.
-[!image](https://github.com/BUEC500C1/video-szyszy315/blob/master/ec500hw4.png)
+![image](https://github.com/BUEC500C1/video-szyszy315/blob/master/ec500hw4.png)
