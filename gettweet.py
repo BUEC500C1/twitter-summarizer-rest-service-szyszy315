@@ -3,12 +3,12 @@
 
 import tweepy
 import json
-import twitter_credentials
+import keys
 
 def get_all_tweets(screen_name):
 #Twitter API credentials
-    auth = tweepy.OAuthHandler(twitter_credentials.CONSUMER_KEY, twitter_credentials.CONSUMER_SECRET)
-    auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(keys.CONSUMER_KEY, keys.CONSUMER_SECRET)
+    auth.set_access_token(keys.ACCESS_TOKEN, keys.ACCESS_TOKEN_SECRET)
     api = tweepy.API(auth)
     tweetcontent= []
     for status in tweepy.Cursor(api.user_timeline,id=screen_name,count = 20,tweet_mode='extended').items(20):
