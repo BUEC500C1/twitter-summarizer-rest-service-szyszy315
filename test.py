@@ -5,6 +5,7 @@ import gettweet
 import os
 import json
 from subprocess import  check_output, CalledProcessError, STDOUT 
+import keys
 # test the content of json file
 def testcontentofjson(name):
   tweets = []
@@ -52,10 +53,11 @@ def testdurationofvideo(name) :
 
 def test():
   name = "@BU_Tweets"
-  # run the tested functions
-  gettweet.get_all_tweets(name)
-  texttoimage.image(name)
-  image2video.video(name)
+  if len(keys.CONSUMER_KEY) > 3 :
+    # run the tested functions
+    gettweet.get_all_tweets(name)
+    texttoimage.image(name)
+    image2video.video(name)
   #start the test
   testcontentofjson(name)
   testifanyfilemiss(name)
