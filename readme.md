@@ -14,6 +14,11 @@ pip3 install -r requirements.txt
 python thread.py
 ```
 Twitter text will be stored in json file. The image generated with tweets will be stored in folders with the same name as the twitter id. The output video will be in the root directory.<br>
+### run the code
+```
+python test.py
+```
+it will test the output json file, the content of json file, generation of the image and the content of the output video.
 
 ## Main Exercise:  Using the twitter feed, construct a daily video summarizing a twitter handle day
 First use tweepy to get the full text of twitter.
