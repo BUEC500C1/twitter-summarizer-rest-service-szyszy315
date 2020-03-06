@@ -6,7 +6,7 @@ flask_script==2.0.6
 
 flask_migrate==2.1.1
 
-marshmallow==2.14.0
+marshmallow==2.15.1
 
 flask_sqlalchemy==2.3.2
 
