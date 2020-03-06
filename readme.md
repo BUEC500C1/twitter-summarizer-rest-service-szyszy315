@@ -1,9 +1,9 @@
-# HW4:  Individual Exercise:  FFmpeg
+# HW5:  twitter-summarizer-rest-service
 ## run the code
 ### requirements
 clone this repository
 ```
-git clone https://github.com/BUEC500C1/video-szyszy315.git
+https://github.com/BUEC500C1/twitter-summarizer-rest-service-szyszy315.git
 ```
 Install all requirements by running
 ```
@@ -11,15 +11,9 @@ pip3 install -r requirements.txt
 ```
 ### run the code
 ```
-python thread.py
+python app.py
 ```
-Twitter text will be stored in json file. The image generated with tweets will be stored in folders with the same name as the twitter id. The output video will be in the root directory.<br>
-### run the code
-```
-python test.py
-```
-it will test the output json file, the content of json file, generation of the image and the content of the output video.
-
+then you can click http://127.0.0.1:5000/.<br>
 ## Main Exercise:  Using the twitter feed, construct a daily video summarizing a twitter handle day
 First use tweepy to get the full text of twitter.
 ### Convert text into an image in a frame
