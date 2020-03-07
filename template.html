@@ -1,0 +1,26 @@
+<!doctype html>
+<title>Input twitterid</title>
+<body background="https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+<h2 style="text-align:center"><font size="20" color="red">Input twitterid</font></h2>
+<p>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  {% endwith %}
+</p>
+<form method="post" action="/" enctype="multipart/form-data" style="text-align:center">
+    <dl>
+    <p>
+    <input name="text">
+    <input type="submit">
+    </p>
+    </dl>
+    <p>
+  </p>
+</form>
+</body>

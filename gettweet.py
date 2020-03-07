@@ -14,7 +14,7 @@ def get_all_tweets(screen_name):
     for status in tweepy.Cursor(api.user_timeline,id=screen_name,count = 20,tweet_mode='extended').items(20):
         tweetcontent.append(status.full_text)
         print ("...{} tweets downloaded so far".format(len(tweetcontent)))
-
+    tweetcontent.reverse()
 
     #write tweet objects to JSON
     file = open(screen_name+'.json', 'w')
@@ -22,5 +22,3 @@ def get_all_tweets(screen_name):
     json.dump(tweetcontent,file,indent = 4)
     print ("Done")
     file.close()
-if __name__ == '__main__':
-    get_all_tweets("@BU_Tweets")
