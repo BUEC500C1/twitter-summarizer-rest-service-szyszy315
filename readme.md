@@ -38,5 +38,5 @@ sudo python3 app.py
 #### tips
 Set host='0.0.0.0' and port=80 when run app on aws. If not you may come up with Unable to connect error.
 
-###Test
+### Test
 Test the web app with Appium Python for Web Applications and AWS Device Farm
