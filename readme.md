@@ -18,5 +18,6 @@ then you can click http://127.0.0.1:5000/ which will lead you to the website. Yo
 ![image](https://github.com/BUEC500C1/twitter-summarizer-rest-service-szyszy315/blob/master/ec500hw5_2.png.png)
 
 ### deployment
-Created an aws instance of ubuntu 18.04 and copy all the code to it. The code now its running on aws.
+Created an aws instance of ubuntu 18.04 and copy all the code to it. The code now its running on aws. When i start the app in aws you can use this url to get access to the web application: http://18.191.110.247/. 
 ![image](https://github.com/BUEC500C1/twitter-summarizer-rest-service-szyszy315/blob/master/ec500hw5_3.png)
+![image](https://github.com/BUEC500C1/twitter-summarizer-rest-service-szyszy315/blob/master/ec.png)
